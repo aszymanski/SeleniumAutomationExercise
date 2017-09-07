@@ -16,6 +16,7 @@ import java.io.File;
 public class RunTest {
     @AfterClass
     public static void teardown() {
+        //Besic setup for extentreport
         //Reporter.loadXMLConfig(new File("src/test/resources/extent-config.xml"));
         Reporter.setSystemInfo("User", System.getProperty("user.name"));
         Reporter.setSystemInfo("Operating System", System.getProperty("os.name"));

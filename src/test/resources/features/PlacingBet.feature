@@ -9,7 +9,6 @@ Feature: Place a bet
 
 Examples:
     | event_Home      | event_Away        | bet   | winner    |
-    | Paraguay        | Uruguay           | 0.10  | Uruguay   |
-    | Argentina       | Venezuela         | 0.20  | Venezuela |
-    | Argentina       | Venezuela         | 0.20  | Draw     |
-
+    | Man City        | Liverpool         | 0.10  | Man City  |
+    | Man City        | Liverpool         | 0.20  | Liverpool |
+    | Benfica         | Portimonense      | 0.20  | Draw      |

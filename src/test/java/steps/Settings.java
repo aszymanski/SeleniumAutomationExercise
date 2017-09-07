@@ -24,6 +24,9 @@ public class Settings {
     private WebDriver driver = webBrowser.openBrowser();
     public Scenario scenario;
 
+    //This is initial setting for test execution
+    //In this example I've used this section to set Capturing screenshots for reports and clearing instance of a driver after test
+
     @Before
     public void before(Scenario scenario)
     {

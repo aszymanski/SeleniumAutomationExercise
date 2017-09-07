@@ -16,6 +16,9 @@ import java.text.DecimalFormat;
 
 public class PlacingBetSteps {
 
+    //This piece is used by picocontainer plugin
+    //It creates instance of a step definition class and lets me to inject code here
+    //This solution lets me to used variables across all test steps. Even those in separate step definition class. This makes code better to maintain.
     private Utility utility;
     public PlacingBetSteps(Utility context) {
         this.utility = context;

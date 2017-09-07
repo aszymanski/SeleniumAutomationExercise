@@ -20,4 +20,8 @@
 - Edge
 - IE
 
+## Report
+Report file and images are generated in output folder in project root directory
+
+
 	

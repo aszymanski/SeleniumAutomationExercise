@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import pages.IBettingPage;
 import pages.desktop.BettingPageDesktop;
 import pages.mobile.BettingPageMobile;
-
+//This class contains values for injection to step definition class by picocontainer plugin
 public class Utility {
 
     private Driver webBrowser = Driver.getInstance();
@@ -19,6 +19,8 @@ public class Utility {
     public String home;
     public String away;
 
+    //This is a dummy workaround for creating an instance of the right page
+    //Picocontainer has no configuration option and this is one of the recommended solutions
     public IBettingPage getBettingPage(){
         IBettingPage page;
         if(System.getenv("Mobile")==null) {

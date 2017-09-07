@@ -20,6 +20,9 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
+
+//Class for creating singleton containing WebDriver
+//This solution let me to not pass driver as a argument for some constructors and static method in helpers section
 public class Driver {
     private static Driver instance = null;
     private WebDriver driver;
@@ -46,6 +49,8 @@ public class Driver {
 
 
     private void setBrowser() {
+
+        //There is not much to comment here. Generally, I'm checking environmental variable and set the right driver
         if(System.getenv("HubUrl")!=null) {
             DesiredCapabilities capabilities = new DesiredCapabilities();
             capabilities = DesiredCapabilities.chrome();
